@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="img/gemini-svg.svg" />
+ <title>Web Sayt Yaratish | Premium Xizmatlar</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="bg-circles">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+    </div>
+
+    <div class="form-container">
+        <div id="form-wrapper">
+            <div class="form-header">
+                <h2>Keling, loyihangizni quramiz! ✨</h2>
+                <p>Ma'lumotlarni qoldiring, biz sizga mukammal yechim taklif qilamiz.</p>
+            </div>
+
+            <form id="tg-form" class="order-form">
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="firstname">Ismingiz</label>
+                        <input id="firstname" type="text" placeholder="Ali" required>
+                    </div>
+                    <div class="form-group half">
+                        <label for="lastname">Familiyangiz</label>
+                        <input id="lastname" type="text" placeholder="Valiyev" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefon raqamingiz</label>
+                    <input id="phone" type="tel" placeholder="+998 (90) 123-45-67" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="site-type">Sizga qanday sayt kerak?</label>
+                    <select id="site-type" required>
+                        <option value="" disabled selected hidden>Loyihani tanlang...</option>
+                        <option value="Admin Panel">Admin Panel</option>
+                        <option value="CRM Tizim">Mahsulot kirdi-chiqdisi (CRM)</option>
+                        <option value="Landing Page">Landing Page</option>
+                        <option value="Internet Do'kon">Internet Do'kon</option>
+                        <option value="Boshqa loyiha">Boshqa maxsus loyiha</option>
+                    </select>
+                </div>
+
+              <div class="form-group">
+    <label for="budget">Kutilayotgan budjetingiz</label>
+    <select id="budget" required>
+        <option value="" disabled selected hidden>Budjetni belgilang...</option>
+        <option value="100$ gacha">100$ gacha (Mini loyiha / Vizitka sayt)</option>
+        <option value="100$-300$">100$ - 300$ (Boshlang'ich)</option>
+        <option value="300$-500$">300$ - 500$ (O'rta biznes)</option>
+        <option value="500$+">500$ dan yuqori (Premium)</option>
+        <option value="Kelishamiz">Kelishilgan holda</option>
+    </select>
+</div>
+
+                <div class="form-group">
+                    <label for="reference">Sizga yoqqan sayt namunasi (ixtiyoriy)</label>
+                    <input id="reference" type="url" placeholder="https://...">
+                </div>
+
+                <div class="form-group">
+                    <label>Qo'shimcha xizmatlar kerakmi?</label>
+                    <div class="checkbox-container">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" value="SEO Optimizatsiya" class="service-check">
+                            <span class="checkmark"></span> SEO Optimizatsiya
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" value="Logo Dizayn" class="service-check">
+                            <span class="checkmark"></span> Logo Dizayn
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" value="Kopirayting (Matn yozish)" class="service-check">
+                            <span class="checkmark"></span> Matn yozish
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Qo'shimcha istaklar</label>
+                    <textarea id="message" rows="3" placeholder="Loyiha haqida qisqacha..."></textarea>
+                </div>
+
+                <button type="submit" id="submit-btn" class="submit-btn">
+                    <span>Yuborish</span>
+                    <div class="btn-glow"></div>
+                </button>
+            </form>
+        </div>
+
+        <div id="success-wrapper" class="success-card hidden">
+            <div class="success-icon">✓</div>
+            <h3>Ajoyib! Ariza qabul qilindi. 🚀</h3>
+            <p>Tez fursatda siz bilan bog'lanamiz!</p>
+            <button onclick="resetForm()" class="back-btn">Yangi ariza</button>
+        </div>
+    </div>
+    <script src="style.js"></script>
+</body>
+</html>
